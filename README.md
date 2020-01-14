@@ -1,2 +1,2 @@
 .
-this repo is dummy for transporing files to colab
+this repo is dummy for transporting files to colab
