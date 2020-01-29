@@ -48,6 +48,8 @@ class my_dataset(Dataset):
         self.npy_list_of_frames = [np.load(filename) for filename in self.npy_filenames]
         self.npy_inputs = {}
         self.npy_filename = []
+        print("the size of training is")
+        print(len(self.csv_conbined_df))
 
         for npy_input, npy_filename in zip(self.npy_list_of_frames, self.npy_filenames):
             tmp_name,_= get_filename_type(npy_filename)
